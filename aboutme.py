@@ -29,7 +29,7 @@ def link():
 
 @app.route("/vocab_tool")
 def vocab_tool():
-    return render_template("vocab_tool.html") # 記得把你的單字小幫手 HTML 改名放進 templates
+    return render_template("vocab_tool.html")
 
 @app.route("/job_backend")
 def job_backend():
@@ -43,5 +43,10 @@ def job_db():
 def job_game():
     return render_template("job_game.html")
 
+# --- Vercel 部署關鍵修正 ---
+# 確保這行在最外面，讓 Vercel 抓到 app 物件
+app = app 
+
+# 本地端測試依然可用
 if __name__ == "__main__":
     app.run(debug=True)
