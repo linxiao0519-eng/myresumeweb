@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人網站</title>
+    <style>
+        body { font-family: "Microsoft JhengHei", sans-serif; margin: 0; background-color: #f4f7f6; }
+        nav { background: #333; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
+        nav a:hover { color: #3498db; }
+        .container { max-width: 800px; margin: 30px auto; background: rgb(255, 255, 255); padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); min-height: 400px; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="{{ url_for('index') }}">🏠 首頁</a>
+    <a href="{{ url_for('holland') }}">📊 興趣何倫碼</a>
+    <a href="{{ url_for('resume') }}">📝 自傳履歷</a>
+    <a href="{{ url_for('work') }}">💼 相關工作</a>
+    <a href="{{ url_for('link') }}">🔗 連結</a>
+</nav>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

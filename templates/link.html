@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>🔗 相關連結與作品</h1>
+
+    <div style="margin: 20px 0; padding: 25px; background: linear-gradient(135deg, #e0e7ff, #f1f4ff); color: #1e293b; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); border: 1px solid #c7d2fe;">
+        <h2 style="margin-top: 0; color: #4361ee;">🚀 精選作品：單字記憶小幫手</h2>
+        <p style="color: #334155; font-weight: 500;">這是一個結合 API 翻譯與間隔記憶演算法的網頁應用程式。</p>
+        <ul style="list-style: none; padding: 0; margin: 15px 0; color: #475569;">
+            <li style="margin-bottom: 5px;">✅ 串接 MyMemory API 即時翻譯</li>
+            <li style="margin-bottom: 5px;">✅ 語音 TTS 英文發音功能</li>
+        </ul>
+        <a href="{{ url_for('vocab_tool') }}" target="_blank" style="display: inline-block; background: #4361ee; color: white; padding: 10px 24px; border-radius: 25px; text-decoration: none; font-weight: bold;">
+            立即線上試用 ➔
+        </a>
+    </div>
+
+    <div style="margin: 20px 0; padding: 25px; background: linear-gradient(135deg, #fff1f2, #fff5f5); color: #1e293b; border-radius: 15px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); border: 1px solid #fecaca;">
+        <h2 style="margin-top: 0; color: #ff4b5c;">🎮 精選作品：2D 互動遊戲開發</h2>
+        <p style="color: #334155; font-weight: 500;">這是我在 Itch.io 上發佈的 2D 遊戲作品，展示了遊戲邏輯與關卡設計能力。</p>
+        <ul style="list-style: none; padding: 0; margin: 15px 0; color: #475569;">
+            <li style="margin-bottom: 5px;">✅ 完整的遊戲循環與碰撞偵測</li>
+            <li style="margin-bottom: 5px;">✅ 於 Itch.io 平台正式上架發佈</li>
+        </ul>
+        <a href="https://linxiao0519.itch.io/411312406-411312189" target="_blank" style="display: inline-block; background: #ff4b5c; color: white; padding: 10px 24px; border-radius: 25px; text-decoration: none; font-weight: bold;">
+            前往 Itch.io 遊玩 ➔
+        </a>
+    </div>
+
+    <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+    <h3>🌐 其他平台</h3>
+    <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 15px;">
+            <strong>Instagram：</strong> <a href="https://www.instagram.com/ckx_.519?igsh=MWtnNXFoeWRzNWJzZg%3D%3D&utm_source=qr" target="_blank" style="color: #3498db;">ckx_.519</a>
+        </li>
+        <li style="margin-bottom: 15px;">
+            <strong>靜宜大學：</strong> <a href="https://www.pu.edu.tw/" target="_blank" style="color: #3498db;">官方網站</a>
+        </li>
+    </ul>
+{% endblock %}

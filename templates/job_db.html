@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="line-height: 1.8;">
+    <a href="{{ url_for('work') }}" style="color: #e67e22; text-decoration: none;">⬅ 返回工作清單</a>
+    
+    <h1 style="color: #e67e22; margin-top: 20px; border-bottom: 2px solid #e67e22; padding-bottom: 10px;">💾 資料庫設計與管理專業</h1>
+    
+    <div style="background: #fff9f1; padding: 25px; border-radius: 15px; margin: 20px 0;">
+        <h3 style="color: #2c3e50;">📊 數據驅動的思維</h3>
+        <p>在資管系的專業訓練中，我對數據的結構化有著嚴謹的要求。這正是 RI 型人格中「研究 (I)」特質的展現。</p>
+        
+        <h4 style="color: #e67e22;">🔹 專業領域</h4>
+        <ul>
+            <li><strong>資料建模：</strong> 熟練 ERD (實體關聯圖) 繪製與業務規則分析</li>
+            <li><strong>正規化實踐：</strong> 嚴格執行 1NF, 2NF, 3NF，確保資料無冗餘</li>
+            <li><strong>系統維護：</strong> 關注 SAP 等企業級 ERP 系統的數據提取與管理</li>
+        </ul>
+
+        <h4 style="color: #e67e22;">🔹 我的堅持</h4>
+        <p>我追求的是「一致性」與「效能」。一個設計良好的資料庫，是所有成功軟體的基石。</p>
+    </div>
+</div>
+{% endblock %}

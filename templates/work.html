@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="line-height: 1.8; text-align: center; margin-bottom: 40px;">
+    
+    <div style="display: inline-block; border-radius: 50%; box-shadow: 0 8px 20px rgba(0,0,0,0.15); padding: 5px; background: white; margin-bottom: 20px; margin-top: 30px;">
+        <img src="{{ url_for('static', filename='2.jpg') }}" alt="開發者照片" 
+             style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 4px solid #e67e22;">
+    </div>
+
+    <h1 style="color: #2c3e50; border-bottom: 3px solid #e67e22; padding-bottom: 10px; display: inline-block;">💼 未來職涯規劃與相關工作</h1>
+
+    <div style="background: #fff8f1; padding: 20px; border-radius: 10px; margin: 20px auto; border: 1px solid #ffedd5; max-width: 800px; text-align: left;">
+        <p>基於我的 <strong>Holland RI (實用型/研究型) 測驗結果</strong>，我具備極強的實作導向與邏輯分析能力，點擊下方領域查看我的專業發展規劃：</p>
+    </div>
+</div>
+
+<div class="job-list" style="max-width: 850px; margin: 0 auto; text-align: left;">
+    <a href="{{ url_for('job_backend') }}" style="text-decoration: none; color: inherit; display: block;">
+        <div style="margin-bottom: 25px; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #3498db; transition: 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <h3 style="margin-top: 0; color: #3498db;">💻 軟體開發 / 後端工程師 ➔</h3>
+            <p>利用 Python Flask 框架建構穩定的 Web 服務，並優化系統效能。點擊查看我的技術藍圖...</p>
+        </div>
+    </a>
+
+    <a href="{{ url_for('job_db') }}" style="text-decoration: none; color: inherit; display: block;">
+        <div style="margin-bottom: 25px; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #e67e22; transition: 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <h3 style="margin-top: 0; color: #e67e22;">💾 資料庫設計與管理 ➔</h3>
+            <p>運用資料庫正規化專業，確保數據一致性與安全性。點擊查看管理策略...</p>
+        </div>
+    </a>
+
+    <a href="{{ url_for('job_game') }}" style="text-decoration: none; color: inherit; display: block;">
+        <div style="margin-bottom: 25px; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-left: 5px solid #ff4b5c; transition: 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+            <h3 style="margin-top: 0; color: #ff4b5c;">🎮 遊戲開發工程師 ➔</h3>
+            <p>處理遊戲物理引擎與關卡邏輯開發，具備 Itch.io 上架經驗。點擊查看開發心得...</p>
+        </div>
+    </a>
+</div>
+{% endblock %}

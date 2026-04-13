@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="profile-header" style="text-align: center; margin-top: 30px; margin-bottom: 40px;">
+    <div style="display: inline-block; border-radius: 50%; box-shadow: 0 8px 20px rgba(0,0,0,0.15); padding: 5px; background: white; margin-bottom: 20px;">
+        <img src="{{ url_for('static', filename='1.jpg') }}" alt="陳楷修的照片" 
+             style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid #3498db; display: block;">
+    </div>
+
+    <h1 style="font-size: 2.5rem; color: #2c3e50; margin-bottom: 5px;">陳楷修 Kai-xiu Chen</h1>
+    <p style="font-size: 1.2rem; color: #3498db;"><strong>靜宜資管二A </strong></p>
+</div>
+
+<div class="card-section">
+    <h3 style="border-left: 5px solid #3498db; padding-left: 15px;">👤 個人簡介</h3>
+    <p style="line-height: 1.8; color: #444;">
+        你好！我是陳楷修，目前就讀於<strong>靜宜大學資訊管理學系二年級</strong>。
+        我的 Holland 興趣代碼為 <strong>RI (實際型 / 研究型)</strong>，這反映了我熱衷於實作與邏輯推演的特質。
+        我享受從無到有建構系統的過程，無論是硬體層面的電路與遊戲邏輯，還是網頁後端的資料處理，都能激發我的開發熱情。
+    </p>
+
+    <h3 style="border-left: 5px solid #3498db; padding-left: 15px; margin-top: 30px;">🛠️ 技術與專案經驗</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div style="background: #f9f9f9; padding: 15px; border-radius: 8px;">
+            <h4 style="margin-top: 0;">🎮 遊戲設計</h4>
+            <p>具備 <strong>2D 遊戲設計</strong> 經驗，曾獨立完成軟體互動遊戲，對遊戲循環與邏輯控制有實務理解。</p>
+        </div>
+        <div style="background: #f9f9f9; padding: 15px; border-radius: 8px;">
+            <h4 style="margin-top: 0;">🌐 網頁開發</h4>
+            <p>曾開發 <strong>「單字記憶幫手」</strong> 小網站，目前正深入鑽研 <strong>Python Flask</strong> 框架與前端架構。</p>
+        </div>
+    </div>
+
+    <h3 style="border-left: 5px solid #3498db; padding-left: 15px; margin-top: 30px;">🎯 未來發展方向</h3>
+    <p style="line-height: 1.8; color: #444;">
+        我致力於往<strong>程式設計與後端工程</strong>方向邁進。透過掌握資料庫規格化 (Normalization) 與 Flask 路由設計，
+        我希望能打造出高效且穩定的網頁應用系統。
+    </p>
+</div>
+
+<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+    <a href="{{ url_for('link') }}" style="background: #3498db; color: white; padding: 12px 25px; text-decoration: none; border-radius: 25px; font-weight: bold; transition: 0.3s; box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);">查看作品集 ➔</a>
+</div>
+{% endblock %}

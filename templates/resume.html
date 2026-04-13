@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div style="line-height: 1.6; margin-bottom: 50px;">
+        <h1 style="color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px;">📝 個人自傳與履歷</h1>
+
+        <div style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 20px 0; display: grid; grid-template-columns: auto 1fr; gap: 25px; align-items: center;">
+            
+            <div style="border-radius: 50%; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 3px; background: white;">
+                <img src="{{ url_for('static', filename='4.jpg') }}" alt="陳楷修的自傳照片" 
+                     style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #3498db; display: block;">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div>
+                    <p><strong>姓名：</strong> 陳楷修 (Kai-xiu Chen)</p>
+                    <p><strong>生日：</strong> 2006 年 5 月 19 日</p>
+                    <p><strong>學校：</strong> 靜宜大學 資管系二A</p>
+                </div>
+                <div>
+                    <p><strong>學號：</strong> 411312406</p>
+                    <p><strong>興趣：</strong> 撞球、程式設計、遊戲開發</p>
+                    <p><strong>特質：</strong> 內向害羞、單純老實（可能沒有實）</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="color: #2980b9;">🎯 學習目標 (Goals & Objectives)</h3>
+        <div style="border-left: 4px solid #3498db; padding-left: 15px; background: #ebf5fb; padding: 15px; border-radius: 0 5px 5px 0; margin-bottom: 25px;">
+            <p><strong>短期目標：</strong> 穩固程式設計基礎，熟練掌握 Python、Java 等多種語言。</p>
+            <p><strong>長期願景：</strong> 寫出全世界都需要的軟體，創造真正實用且有價值的應用程式，並擁有自己的開發團隊。</p>
+        </div>
+
+        <h3 style="color: #2980b9; margin-top: 30px;">🏫 成長歷程 & 特殊事蹟</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-radius: 8px; overflow: hidden;">
+            <thead>
+                <tr style="background: #3498db; color: white; text-align: left;">
+                    <th style="padding: 12px 15px; border: 1px solid #ddd;">階段</th>
+                    <th style="padding: 12px 15px; border: 1px solid #ddd;">經歷 / 事蹟</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center; font-weight: 500;">求學背景</td>
+                    <td style="padding: 12px 15px; border: 1px solid #ddd;">復興國中 ➔ 台南二中 ➔ 靜宜大學資管系</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center; font-weight: 500;">才藝表現</td>
+                    <td style="padding: 12px 15px; border: 1px solid #ddd;">街舞表演、管樂團演出、心算第四名</td>
+                </tr>
+                <tr>
+                    <td style="padding: 12px 15px; border: 1px solid #ddd; text-align: center; font-weight: 500;">生活趣聞</td>
+                    <td style="padding: 12px 15px; border: 1px solid #ddd; font-style: italic; color: #555;">
+                        曾在路上撞到猴子、因連續噴嚏引發班級確診熱潮、被野狗追趕跌入田裡等「傳奇」經歷。
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="color: #2980b9; margin-top: 30px;">💬 關於我</h3>
+        <p style="text-indent: 2em; color: #444; margin-top: 10px;">
+            我是一名對技術充滿熱忱的資管系學生。除了課堂上的理論學習，我更喜歡透過實作來解決問題。
+            目前我正致力於將我的 2D 遊戲開發經驗與網頁後端技術（Flask）結合。
+            雖然自認性格內向老實，但在面對程式邏輯與專案挑戰時，我擁有極強的專注力與研究精神。
+        </p>
+    </div>
+{% endblock %}
